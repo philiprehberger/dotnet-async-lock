@@ -10,9 +10,9 @@
     <RootNamespace>Philiprehberger.AsyncLock</RootNamespace>
 
     <PackageId>Philiprehberger.AsyncLock</PackageId>
-    <Version>0.1.0</Version>
+    <Version>0.1.1</Version>
     <Authors>Philip Rehberger</Authors>
-    <Description>Async-aware synchronization primitives including AsyncLock, AsyncSemaphore, and AsyncOnce for safe async mutual exclusion.</Description>
+    <Description>Async-aware synchronization primitives — AsyncLock, AsyncSemaphore, and AsyncOnce for safe mutual exclusion.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageTags>async;lock;semaphore;synchronization;concurrency</PackageTags>

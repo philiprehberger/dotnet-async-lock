@@ -4,7 +4,7 @@
 [![NuGet](https://img.shields.io/nuget/v/Philiprehberger.AsyncLock.svg)](https://www.nuget.org/packages/Philiprehberger.AsyncLock)
 [![License](https://img.shields.io/github/license/philiprehberger/dotnet-async-lock)](LICENSE)
 
-Async-aware synchronization primitives including AsyncLock, AsyncSemaphore, and AsyncOnce for safe async mutual exclusion.
+Async-aware synchronization primitives — AsyncLock, AsyncSemaphore, and AsyncOnce for safe mutual exclusion.
 
 ## Installation
 
@@ -57,23 +57,31 @@ var client = await once.GetAsync(); // Factory runs once, result is cached
 
 ### `AsyncLock`
 
-- `LockAsync(CancellationToken cancellationToken = default)` — Acquires the lock asynchronously. Returns an `IDisposable` that releases the lock when disposed.
+| Method | Description |
+|--------|-------------|
+| `LockAsync(CancellationToken cancellationToken = default)` | Acquires the lock asynchronously. Returns an `IDisposable` that releases the lock when disposed. |
 
 ### `AsyncSemaphore`
 
-- `AsyncSemaphore(int maxCount)` — Creates a semaphore with the specified maximum count.
-- `WaitAsync(CancellationToken cancellationToken = default)` — Waits to enter the semaphore. Returns an `IDisposable` that releases the semaphore when disposed.
-- `CurrentCount` — Gets the number of remaining entries.
+| Method | Description |
+|--------|-------------|
+| `AsyncSemaphore(int maxCount)` | Creates a semaphore with the specified maximum count. |
+| `WaitAsync(CancellationToken cancellationToken = default)` | Waits to enter the semaphore. Returns an `IDisposable` that releases the semaphore when disposed. |
+| `CurrentCount` | Gets the number of remaining entries. |
 
 ### `AsyncOnce<T>`
 
-- `AsyncOnce(Func<Task<T>> factory)` — Creates an instance with the specified async factory.
-- `GetAsync(CancellationToken cancellationToken = default)` — Returns the cached value, executing the factory on first call.
-- `IsCompleted` — Whether the factory has been executed.
+| Method | Description |
+|--------|-------------|
+| `AsyncOnce(Func<Task<T>> factory)` | Creates an instance with the specified async factory. |
+| `GetAsync(CancellationToken cancellationToken = default)` | Returns the cached value, executing the factory on first call. |
+| `IsCompleted` | Whether the factory has been executed. |
 
 ### `Releaser`
 
-- Readonly struct implementing `IDisposable` that releases a `SemaphoreSlim` on disposal.
+| Method | Description |
+|--------|-------------|
+| `Releaser` | Readonly struct implementing `IDisposable` that releases a `SemaphoreSlim` on disposal. |
 
 ## Development
 
@@ -83,4 +91,4 @@ dotnet build src/Philiprehberger.AsyncLock.csproj --configuration Release
 
 ## License
 
-[MIT](LICENSE)
+MIT
