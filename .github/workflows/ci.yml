@@ -25,6 +25,8 @@ jobs:
       - name: Build
         run: dotnet build src/Philiprehberger.AsyncLock.csproj --configuration Release --no-restore
 
+      - run: dotnet test tests/Philiprehberger.AsyncLock.Tests/Philiprehberger.AsyncLock.Tests.csproj --configuration Release --no-restore
+
   publish:
     needs: build
     runs-on: ubuntu-latest

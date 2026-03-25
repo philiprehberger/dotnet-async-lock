@@ -10,7 +10,7 @@
     <RootNamespace>Philiprehberger.AsyncLock</RootNamespace>
 
     <PackageId>Philiprehberger.AsyncLock</PackageId>
-    <Version>0.1.1</Version>
+    <Version>0.1.2</Version>
     <Authors>Philip Rehberger</Authors>
     <Description>Async-aware synchronization primitives — AsyncLock, AsyncSemaphore, and AsyncOnce for safe mutual exclusion.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
