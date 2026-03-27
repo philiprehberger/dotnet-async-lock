@@ -3,6 +3,7 @@
 [![CI](https://github.com/philiprehberger/dotnet-async-lock/actions/workflows/ci.yml/badge.svg)](https://github.com/philiprehberger/dotnet-async-lock/actions/workflows/ci.yml)
 [![NuGet](https://img.shields.io/nuget/v/Philiprehberger.AsyncLock.svg)](https://www.nuget.org/packages/Philiprehberger.AsyncLock)
 [![License](https://img.shields.io/github/license/philiprehberger/dotnet-async-lock)](LICENSE)
+[![Sponsor](https://img.shields.io/badge/sponsor-GitHub%20Sponsors-ec6cb9)](https://github.com/sponsors/philiprehberger)
 
 Async-aware synchronization primitives — AsyncLock, AsyncSemaphore, and AsyncOnce for safe mutual exclusion.
 
@@ -91,4 +92,4 @@ dotnet build src/Philiprehberger.AsyncLock.csproj --configuration Release
 
 ## License
 
-MIT
+[MIT](LICENSE)
